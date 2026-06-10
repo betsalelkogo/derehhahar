@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="דרך ההר – טיולי ריידרים בהר חברון. חוויית שטח בלתי נשכחת על רכבי R-Rider חשמליים בנוף המרהיב של הרי חברון.">
+  <meta name="keywords" content="טיולי ריידרים, הר חברון, ריידר, R-Rider, טיול שטח, אטרקציה, יום כיף, גיבוש">
+  <title>דרך ההר | טיולי ריידרים בהר חברון</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo-color.png" type="image/png">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">דלג לתוכן</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" data-i18n-aria="brandAria">
+        <img src="images/logo-color.png" alt="" data-i18n-alt="logoAlt" width="120" height="120">
+      </a>
+      <nav class="header-nav" aria-label="ניווט ראשי">
+        <a href="#experience" data-i18n="nav.experience">החוויה</a>
+        <a href="#routes" data-i18n="nav.routes">מסלולים</a>
+        <a href="#gallery" data-i18n="nav.gallery">גלריה</a>
+        <a href="#reviews" data-i18n="nav.reviews">ביקורות</a>
+        <a href="#contact" data-i18n="nav.contact">צור קשר</a>
+      </nav>
+      <div class="lang-switcher" role="group" data-i18n-aria="langLabel">
+        <button type="button" class="lang-btn lang-btn--active" data-lang="he" aria-pressed="true">עב</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+      <a class="header-cta header-cta--whatsapp" data-wa-link href="https://api.whatsapp.com/send?phone=972549149646" target="_blank" rel="noopener noreferrer" dir="ltr">054-914-9646</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" role="img" data-i18n-aria="hero.bgAria"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="hero-tagline" data-i18n="hero.tagline">טיולי ריידרים בהר חברון</p>
+        <h1 id="hero-title" data-i18n="hero.title">דרך ההר</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">אטרקציית טבע על גלגלים</p>
+        <div class="hero-actions">
+          <a class="btn btn-whatsapp btn-lg" data-wa-link href="https://api.whatsapp.com/send?phone=972549149646" target="_blank" rel="noopener noreferrer" data-i18n="hero.whatsapp">דברו איתי בוואטסאפ</a>
+          <a class="btn btn-outline btn-lg" href="#contact" data-i18n="hero.book">שריינו מקום</a>
+        </div>
+      </div>
+      <div class="mountain-divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>רוצים לצאת מהשגרה?</span>
+        <span>לאסוף אנרגיות חדשות?</span>
+        <span>לשחרר אדרנלין?</span>
+        <span>רוצים לצאת מהשגרה?</span>
+        <span>לאסוף אנרגיות חדשות?</span>
+        <span>לשחרר אדרנלין?</span>
+      </div>
+    </section>
+
+    <section class="intro" id="experience">
+      <div class="container intro-grid">
+        <div class="intro-text">
+          <p class="intro-greeting" data-i18n="intro.greeting">נעים מאוד.</p>
+          <h2 data-i18n="intro.title">בדיוק בשבילכם!</h2>
+          <p data-i18n-html="intro.p1" class="intro-lead">הטיול הוא בין <strong>שעה לשעה ורבע</strong>. חוויה בלתי נשכחת לקבוצות, משפחות ויחידים — מסלולים מרהיבים, ליווי מקצועי ונוף שאין כמוהו בהר חברון.</p>
+          <p data-i18n-html="intro.p2">כרגע יש <strong>4 טיולים</strong> לבחירה, עם הסברים על הסביבה והאזור לאורך הדרך. הטיולים מלווים על ידי מדריך, עם הדרכה על הכלי ועל המסלול לפני היציאה.</p>
+        </div>
+        <div class="intro-image">
+          <img src="images/fleet.jpg" alt="" data-i18n-alt="intro.fleetAlt" loading="lazy" width="800" height="500">
+        </div>
+      </div>
+    </section>
+
+    <section class="routes" id="routes">
+      <div class="container">
+        <h2 class="section-title" data-i18n="routes.title">מסלולי הטיול</h2>
+        <p class="section-subtitle" data-i18n="routes.subtitle">4 טיולים — בחרו את המסלול שמתאים לכם</p>
+        <div class="routes-grid" id="routes-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="vehicles" id="vehicles">
+      <div class="container">
+        <h2 class="section-title" data-i18n="vehicles.title">הכלים שלנו</h2>
+        <div class="vehicles-grid">
+          <article class="vehicle-card">
+            <h3 data-i18n="vehicles.rider">ריידר</h3>
+            <p data-i18n="vehicles.riderDesc">כלי חשמלי אישי לרכיבה עצמית בשטח.</p>
+            <p class="vehicle-requirement" data-i18n="vehicles.riderReq">נדרש רישיון נהיגה לכל נהג ריידר.</p>
+          </article>
+          <article class="vehicle-card">
+            <h3 data-i18n="vehicles.club">קלאב קאר</h3>
+            <p data-i18n="vehicles.clubDesc">רכב שטח חשמלי, מיועד לעד 6 אנשים.</p>
+            <p class="vehicle-requirement" data-i18n="vehicles.clubReq">מתאים לכל הגילאים — רק לנהג נדרש רישיון נהיגה.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title" data-i18n="features.title">פרטים חשובים</h2>
+        <ul class="features-grid">
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">⏱</span>
+            <h3 data-i18n="features.duration">שעה – שעה ורבע</h3>
+          </li>
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">14</span>
+            <h3 data-i18n="features.group">עד 14 משתתפים</h3>
+          </li>
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🌐</span>
+            <h3 data-i18n="features.langs">שפות</h3>
+            <p data-i18n="features.langsDesc">עברית, אנגלית וצרפתית</p>
+          </li>
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🧭</span>
+            <h3 data-i18n="features.guide">ליווי מדריך</h3>
+            <p data-i18n="features.guideDesc">הדרכה על הכלי והמסלול לפני היציאה</p>
+          </li>
+        </ul>
+        <div class="highlights">
+          <p class="highlight" data-i18n="features.h1">ריידר — לבעלי רישיון נהיגה בלבד</p>
+          <p class="highlight" data-i18n="features.h2">קלאב קאר — לכל הגילאים, רישיון נדרש לנהג בלבד</p>
+          <p class="highlight highlight-accent" data-i18n="features.h3">4 טיולים: סוסיה הקדומה · נדודי דוד · יער יתיר · היישוב היהודי בחברון</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container cta-inner">
+        <h2 data-i18n="cta.title">רוצים גם אתם לצאת מהשגרה?</h2>
+        <p data-i18n="cta.text">שלחו הודעה בוואטסאפ, התקשרו או השאירו פרטים — ונחזור אליכם בהקדם לשריין מקום לרכיבה מאתגרת ומהנה!</p>
+        <div class="cta-actions">
+          <a class="btn btn-whatsapp btn-lg" data-wa-link href="https://api.whatsapp.com/send?phone=972549149646" target="_blank" rel="noopener noreferrer" data-i18n="cta.whatsapp">וואטסאפ</a>
+          <a class="btn btn-primary btn-lg" href="tel:+972549149646" data-i18n="cta.call">התקשרו: 054-914-9646</a>
+          <a class="btn btn-outline btn-lg" href="#contact" data-i18n="cta.form">טופס יצירת קשר</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="section-title" data-i18n="gallery.title">תמונות מהשטח</h2>
+        <p class="section-subtitle" data-i18n="gallery.subtitle">רגעים מהטיולים שלנו בהר חברון וסביבתו</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-01.jpg" alt="" data-i18n-alt="0" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-02.jpg" alt="" data-i18n-alt="1" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-03.jpg" alt="" data-i18n-alt="2" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-04.jpg" alt="" data-i18n-alt="3" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-05.jpg" alt="" data-i18n-alt="4" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-06.jpg" alt="" data-i18n-alt="5" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-10.jpg" alt="" data-i18n-alt="6" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-12.jpg" alt="" data-i18n-alt="7" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-13.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-14.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-15.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-16.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-18.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-19.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-20.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-21.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-22.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/gallery-23.jpg" alt="" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="section-title" data-i18n="reviews.title">ביקורות מהשטח</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item--review" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/review-01.jpg" alt="" loading="lazy"></figure>
+        <figure class="gallery-item gallery-item--review" tabindex="0" role="button" data-i18n-aria="gallery.open"><img src="images/review-02.jpg" alt="" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 data-i18n="contact.title">צרו קשר</h2>
+          <ul class="contact-list">
+            <li>
+              <strong data-i18n="contact.phone">וואטסאפ / טלפון</strong>
+              <a data-wa-link href="https://api.whatsapp.com/send?phone=972549149646" target="_blank" rel="noopener noreferrer" dir="ltr">054-914-9646</a>
+            </li>
+            <li>
+              <strong data-i18n="contact.email">דוא״ל</strong>
+              <a href="mailto:bnukog@gmail.com">bnukog@gmail.com</a>
+            </li>
+            <li>
+              <strong data-i18n="contact.area">אזור פעילות</strong>
+              <span data-i18n="contact.areaVal">הר חברון וסביבה</span>
+            </li>
+            <li>
+              <strong data-i18n="contact.owner">בעלים</strong>
+              <span data-i18n="contact.ownerVal">בנימין קוגינסקי</span>
+            </li>
+          </ul>
+          <a class="btn btn-whatsapp btn-block contact-whatsapp" data-wa-link href="https://api.whatsapp.com/send?phone=972549149646" target="_blank" rel="noopener noreferrer" data-i18n="contact.whatsappBtn">שלחו הודעה בוואטסאפ</a>
+          <p class="contact-note" data-i18n="contact.note">או השאירו פרטים בטופס — ההודעה תישלח אלינו במייל.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="953a3bbf-a431-4c9e-949e-bf8cfe5df89c">
+          <input type="hidden" name="subject" value="פנייה חדשה מאתר דרך ההר">
+          <input type="hidden" name="from_name" value="דרך ההר – טופס יצירת קשר">
+          <h3 data-i18n="contact.formTitle">השאירו פרטים</h3>
+          <label>
+            <span data-i18n="contact.name">שם מלא</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>
+            <span data-i18n="contact.phoneLabel">טלפון</span>
+            <input type="tel" name="phone" required autocomplete="tel" dir="ltr">
+          </label>
+          <label>
+            <span data-i18n="contact.emailLabel">אימייל</span>
+            <input type="email" name="email" autocomplete="email" dir="ltr">
+          </label>
+          <label>
+            <span data-i18n="contact.message">הודעה</span>
+            <textarea name="message" rows="4" data-i18n-placeholder="contact.placeholder" placeholder="מספר משתתפים, תאריך מועדף..."></textarea>
+          </label>
+          <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off">
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.submit">שליחה</button>
+          <p class="form-hint" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand" data-i18n="footer.brand">דרך ההר · טיולי ריידרים בהר חברון</p>
+      <p class="footer-copy">&copy; <span id="year"></span> <span data-i18n="footer.rights">דרך ההר. כל הזכויות שמורות.</span></p>
+      <p class="footer-seo" data-i18n="footer.seo">טיולי ריידרים בהר חברון | ריידר חשמלי | טיול שטח | אטרקציה בהר חברון | יום כיף | גיבוש קבוצות | R-Rider</p>
+    </div>
+  </footer>
+
+  <a data-wa-link href="https://api.whatsapp.com/send?phone=972549149646" class="whatsapp-float" target="_blank" rel="noopener noreferrer" data-i18n-aria="whatsappAria">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.882 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <a href="#top" class="back-to-top" aria-label="חזרה לראש הדף" data-i18n-aria="backTop">↑</a>
+
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="סגור">×</button>
+    <button type="button" class="lightbox-nav lightbox-nav--prev" id="lightbox-prev" aria-label="תמונה קודמת">→</button>
+    <button type="button" class="lightbox-nav lightbox-nav--next" id="lightbox-next" aria-label="תמונה הבאה">←</button>
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightbox-img" class="lightbox-img">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+      <p class="lightbox-counter" id="lightbox-counter" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
